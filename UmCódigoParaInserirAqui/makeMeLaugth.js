@@ -23,9 +23,14 @@ const retornoVitoriaOuDerrota = () => {
 const iniciarQuizImpossivel = () => {
   rl.question("Você sabe o tamanho do sol?\n", (answer) => {
     answer === "Muito grande" ? retornoRespostaAcerto() : retornoRespostaErro();
-  });
 
-  rl.close();
+    rl.question(
+      "Você sabe quantos planetas temos em nosso sistema solar?\n",
+      (answer) => {
+        answer === "8" ? retornoRespostaAcerto() : retornoRespostaErro();
+      }
+    );
+  });
 };
 
 iniciarQuizImpossivel();
