@@ -6,7 +6,7 @@
 <li> Pegunta 3 => Você sabe por que a gasolina ta tão cara? A) Bolsonaro B) Aliens </li>
 </ol>
 
-# Para rodar os Louquiz basta ir no diretório UmCodigoParaInserirAqui e rodar o comando "node makeMeLaugth.js"
+<h4> Para rodar o Louquiz basta ir no diretório UmCodigoParaInserirAqui e rodar o comando </strong> node makeMeLaugth.js </strong> <h4>
 
 [Eu sou um HyperLink e te levarei para a página no google](https://www.google.com)
 
