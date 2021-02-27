@@ -13,7 +13,7 @@ const retornoRespostaAcerto = () => {
   console.log("Você é muito esperto em");
 };
 const retornoVitoriaOuDerrota = () => {
-  if (pontosVitoria > 3) {
+  if (pontosVitoria === 3) {
     console.log("Vitoria");
   } else {
     console.log("Derrota");
@@ -28,6 +28,14 @@ const iniciarQuizImpossivel = () => {
       "Você sabe quantos planetas temos em nosso sistema solar?\n",
       (answer) => {
         answer === "8" ? retornoRespostaAcerto() : retornoRespostaErro();
+
+        rl.question(
+          "Você sabe por que a gasolina ta tão cara? A) Bolsonaro B) Aliens\n",
+          (answer) => {
+            answer === "B" ? retornoRespostaAcerto() : retornoRespostaErro();
+            retornoVitoriaOuDerrota();
+          }
+        );
       }
     );
   });
